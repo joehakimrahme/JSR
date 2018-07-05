@@ -1,3 +1,6 @@
+import { Roulette } from './roulette';
+
+
 export const RACES: string[] = [
     "Altmer",
     "Argonian",
@@ -57,3 +60,36 @@ export const QUESTS: string[] = [
     "Thieves Guild",
     "Assassin's Brotherhood",
 ]
+
+export const CONDITIONS: object = {
+    "trade": function (r: Roulette) {
+	// have either one major trade skill
+	var majorTradeCount = 0;
+	for (var skill of r.major) {
+            if (TRADE_SKILLS.indexOf(skill) > -1) {
+		majorTradeCount++;
+            }
+	}
+
+	// or 2 minor skills
+	var minorTradeCount = 0;
+	for (var skill of r.minor) {
+            if (TRADE_SKILLS.indexOf(skill) > -1) {
+		minorTradeCount++;
+            }
+	}
+	if (majorTradeCount >= 1) {
+            return true;
+	} else if (minorTradeCount >= 2) {
+            return true;
+	} else {
+            return false;
+	}
+    },
+    // "no-elves": function (r: Roulette) {
+    // 	    if (r.race.includes("mer")) { // It's an elf!
+    // 	        return false;
+    // 	    }
+    // 	    return true;
+    // }
+}
