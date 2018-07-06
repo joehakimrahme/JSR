@@ -58,7 +58,7 @@ export const QUESTS: string[] = [
     "College of Winterhold",
     "Companions",
     "Thieves Guild",
-    "Assassin's Brotherhood",
+    "Dark Brotherhood",
 ]
 
 export const CONDITIONS: object = {
@@ -86,6 +86,10 @@ export const CONDITIONS: object = {
             return false;
 	}
     },
+    "darkbro-sleep": function (r: Roulette) {
+	return !(r.handicaps.indexOf("Insomniac") > -1 && r.quest === "Dark Brotherhood");
+    }
+
     // "no-elves": function (r: Roulette) {
     // 	    if (r.race.includes("mer")) { // It's an elf!
     // 	        return false;
