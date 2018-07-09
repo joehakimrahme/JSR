@@ -16,19 +16,7 @@ export class RouletteComponent implements OnInit {
   _skills: Array<string>;
   
   constructor() {
-    // Concat all the skills and keep shuffling them until
-    // no disqualifying conditions are met.
-    this._skills = FIGHT_SKILLS.concat(TRADE_SKILLS);
-    do {
-      shuffle(this._skills);
-      this.result = {
-	race: choice(RACES),
-	major: this._skills.slice(0, 3),
-	minor: this._skills.slice(3, 6),
-	handicaps: this.generateHandicap(),
-	quest: choice(QUESTS),
-      };
-    } while(!this.isValid());
+    this.result = {};
   }
   
   ngOnInit() {
@@ -61,6 +49,18 @@ export class RouletteComponent implements OnInit {
     return result;
   }
 
-
+  ngOnSelect() {
+    this._skills = FIGHT_SKILLS.concat(TRADE_SKILLS);
+    do {
+      shuffle(this._skills);
+      this.result = {
+	race: choice(RACES),
+	major: this._skills.slice(0, 3),
+	minor: this._skills.slice(3, 6),
+	handicaps: this.generateHandicap(),
+	quest: choice(QUESTS),
+      };
+    } while(!this.isValid());
+  }
 
 }
