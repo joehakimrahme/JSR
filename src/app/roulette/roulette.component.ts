@@ -24,7 +24,7 @@ export class RouletteComponent implements OnInit {
 
   
   isValid() {
-    for (var cond in CONDITIONS) {
+    for (let cond in CONDITIONS) {
       if (!CONDITIONS[cond](this.result)) {
 	console.log("Reshuffle: " + cond);
 	return false;
