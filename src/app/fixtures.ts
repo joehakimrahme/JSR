@@ -15,27 +15,30 @@ export const RACES: string[] = [
 ]
 
 export const FIGHT_SKILLS: string[] = [
-  "Alteration",
   "Archery",
-  "Block",
   "Conjuration",
   "Destruction",
-  "Heavy Armor",
   "Illusion",
-  "Light Armor",
   "One-handed",
-  "Restoration",
-  "Sneak",
   "Two-handed",
 ]
 
 export const TRADE_SKILLS: string[] = [
   "Alchemy",
   "Enchanting",
-  "Lockpicking",
-  "Pickpocket",
   "Smithing",
   "Speech",
+]
+
+export const NEUTRAL_SKILLS: string[] = [
+  "Alteration",
+  "Block",
+  "Heavy Armor",
+  "Light Armor",
+  "Lockpicking",
+  "Pickpocket",
+  "Restoration",
+  "Sneak",
 ]
 
 export const HANDICAPS: string[] = [
@@ -70,7 +73,6 @@ export const CONDITIONS: object = {
 	majorTradeCount++;
       }
     }
-
     // or 2 minor skills
     var minorTradeCount = 0;
     for (var skill of r.minor) {

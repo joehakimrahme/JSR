@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Roulette } from '../roulette';
-import { RACES, FIGHT_SKILLS, TRADE_SKILLS, HANDICAPS, QUESTS, CONDITIONS } from '../fixtures';
+import { RACES, FIGHT_SKILLS, NEUTRAL_SKILLS, TRADE_SKILLS, HANDICAPS, QUESTS, CONDITIONS } from '../fixtures';
 import { choice, shuffle} from '../utils';
 
 
@@ -40,9 +40,8 @@ export class RouletteComponent implements OnInit {
     var odds = 8;
     var result = [];
     for (i=0; i<HANDICAPS.length; i++) {
-      var h = HANDICAPS[i]
       if (Math.random() * 100 < odds) {
-	result.push(h);
+	result.push(HANDICAPS[i]);
 	odds /= 2;
       }
     }
@@ -51,6 +50,7 @@ export class RouletteComponent implements OnInit {
 
   ngOnSelect() {
     this._skills = FIGHT_SKILLS.concat(TRADE_SKILLS);
+    this._skills = this._skills.concat(NEUTRAL_SKILLS);
     do {
       shuffle(this._skills);
       this.result = {
