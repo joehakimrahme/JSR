@@ -16,7 +16,13 @@ export class RouletteComponent implements OnInit {
   _skills: Array<string>;
   
   constructor() {
-    this.result = {};
+    this.result = {
+      race: "",
+      major: [],
+      minor: [],
+      handicaps: [],
+      quest: "",
+    };
   }
   
   ngOnInit() {
