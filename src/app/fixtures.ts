@@ -2,15 +2,15 @@ import { Roulette } from './roulette';
 
 
 export const RACES: string[] = [
-  "Altmer",
+  "Altmer (High Elf)",
   "Argonian",
-  "Bosmer",
+  "Bosmer (Wood Elf)",
   "Breton",
-  "Dunmer",
+  "Dunmer (Dark Elf)",
   "Imperial",
   "Khajit",
   "Nord",
-  "Orsimer",
+  "Orsimer (Orc)",
   "Redguard",
 ]
 
