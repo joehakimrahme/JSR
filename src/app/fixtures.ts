@@ -49,7 +49,7 @@ export const HANDICAPS: string[] = [
   "Body Odour",
   "Dragonfool",
   "Agoraphobic",
-  "Traveler",
+  "Seasoned Traveler",
   "Permadeath",
 ]
 
