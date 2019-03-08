@@ -62,6 +62,9 @@ export const QUESTS: string[] = [
   "Companions",
   "Thieves Guild",
   "Dark Brotherhood",
+  "Dragonborn (Solstheim)",
+  "Dawnstar (Dawnstar)",
+  "Dawnstar (Vampire)",
 ]
 
 export const CONDITIONS: object = {
