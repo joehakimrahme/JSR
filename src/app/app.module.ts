@@ -6,15 +6,15 @@ import { RouletteComponent } from './roulette/roulette.component';
 import { RulesComponent } from './rules/rules.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    RouletteComponent,
-    RulesComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+	AppComponent,
+	RouletteComponent,
+	RulesComponent
+    ],
+    imports: [
+	BrowserModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
