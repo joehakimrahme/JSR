@@ -42,6 +42,7 @@ export const NEUTRAL_SKILLS: string[] = [
 ]
 
 export const HANDICAPS: string[] = [
+    "Broken Fingers",
     "Insomniac",
     "Stoned",
     "Pious Mortal",
@@ -92,7 +93,12 @@ export const CONDITIONS: object = {
 	}
     },
     "darkbro-sleep": function (r: Roulette) {
+	// sleeping is required for DB questline
 	return !(r.handicaps.indexOf("Insomniac") > -1 && r.quest === "Dark Brotherhood");
+    },
+    "unarmed-khajit": function (r: Roulette) {
+	// not sure about this one, but I think only khajit should get BF for now
+	return !(r.handicaps.indexOf("Broken Fingers") > -1 && r.race !== "Khajit");
     }
 
     // "no-elves": function (r: Roulette) {
