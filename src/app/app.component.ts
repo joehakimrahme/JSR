@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title = 'Mood\'s Skyrim Roulette';
+    title = 'Joe\'s Skyrim Roulette';
 }
