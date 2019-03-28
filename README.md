@@ -63,6 +63,9 @@ higher the difficulty the more fun you'll have.
 
 Here are the handicaps you might get:
 
+* **Broken Fingers** A childhood accident has damaged both your hands,
+  leaving your fingers severely deformed. You lose the ability to hold
+  weapons. (Unhanded combat, spells and staves are still fair game)
 * **Insomniac** The voices in your head prevent you from falling asleep. The
   loud screams of your own anxiety keep you up and dreading the night. You
   cannot sleep in-game.
