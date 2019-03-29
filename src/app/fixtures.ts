@@ -62,10 +62,11 @@ export const QUESTS: string[] = [
     "College of Winterhold",
     "Companions",
     "Thieves Guild",
-    "Dark Brotherhood",
+    "Dark Brotherhood (mainline)",
+    "Destroy the Dark Brotherhood",
     "Dragonborn (Solstheim)",
-    "Dawnstar (Dawnstar)",
-    "Dawnstar (Vampire)",
+    "Dawnguard (Dawnguard)",
+    "Dawnguard (Vampire)",
 ]
 
 export const CONDITIONS: object = {
