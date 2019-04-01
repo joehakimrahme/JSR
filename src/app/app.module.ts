@@ -8,13 +8,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
     declarations: [
-	AppComponent,
-	RouletteComponent,
-	RulesComponent,
-	NavbarComponent
+        AppComponent,
+        RouletteComponent,
+        RulesComponent,
+        NavbarComponent
     ],
     imports: [
-	BrowserModule
+        BrowserModule
     ],
     providers: [],
     bootstrap: [AppComponent]

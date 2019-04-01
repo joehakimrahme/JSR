@@ -7,19 +7,19 @@ describe('RouletteComponent', () => {
     let fixture: ComponentFixture<RouletteComponent>;
 
     beforeEach(async(() => {
-	TestBed.configureTestingModule({
-	    declarations: [ RouletteComponent ]
-	})
-	    .compileComponents();
+        TestBed.configureTestingModule({
+            declarations: [ RouletteComponent ]
+        })
+            .compileComponents();
     }));
 
     beforeEach(() => {
-	fixture = TestBed.createComponent(RouletteComponent);
-	component = fixture.componentInstance;
-	fixture.detectChanges();
+        fixture = TestBed.createComponent(RouletteComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
     });
 
     it('should create', () => {
-	expect(component).toBeTruthy();
+        expect(component).toBeTruthy();
     });
 });
