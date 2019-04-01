@@ -1,12 +1,12 @@
-<div class="container" style="width: 500px;">
-  <table class="table .table-hover text-left">
+<div class="roulette">
+  <table>
     <tr><td style="font-weight: bold">Race</td><td>{{result.race}}</td></tr>
     <tr><td style="font-weight: bold">Major Skills</td><td>{{result.major.join(", ")}}</td></tr>
     <tr><td style="font-weight: bold">Minor Skills</td><td>{{result.minor.join(", ")}}</td></tr>
     <tr><td style="font-weight: bold">Handicaps</td><td>{{result.handicaps.join(", ")}}</td></tr>
     <tr><td style="font-weight: bold">Quest</td><td>{{result.quest}}</td></tr>
   </table>
-  <div class="container mt-3 p-3">
-    <button type="button" class="btn btn-primary" (click)="ngOnSelect()">ROLL</button>
+  <div>
+    <a href="#" class="button" (click)="ngOnSelect()">ROLL</a>
   </div>
 </div>

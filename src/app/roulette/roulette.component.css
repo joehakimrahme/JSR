@@ -1,0 +1,27 @@
+.roulette {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.roulette table {
+    margin-bottom: 2em;
+}
+
+.roulette table td {
+    border-bottom:1pt solid #505050;
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+    margin-left: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+    .roulette table {
+	font-size: 18px;
+	width: 100%;
+    }
+}

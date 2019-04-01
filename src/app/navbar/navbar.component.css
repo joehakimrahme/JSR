@@ -1,0 +1,50 @@
+nav {
+    background-color: black;
+    padding-left: 3%;
+    padding-right: 1%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8em;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 3%;
+    justify-content: flex-end;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: white;
+}
+
+.nav-item:hover a {
+    color: black;
+}
+
+.logo {
+    font-size: 30px;
+    text-color: #801515
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-links {
+	display: block;
+    }
+}
