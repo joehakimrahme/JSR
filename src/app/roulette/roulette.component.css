@@ -21,7 +21,15 @@
 
 @media only screen and (max-width: 600px) {
     .roulette table {
-	font-size: 18px;
+	font-size: 12px;
 	width: 100%;
+    }
+
+    .roulette table td {
+	padding: 0.5em;
+    }
+
+    .roulette {
+	padding: 1em;
     }
 }
