@@ -105,11 +105,9 @@ export const CONDITIONS: object = {
         // you don't want to get Light Armor and Heavy Armor as your major/minor skill, it's a waste
         const _skills = r.major.concat(r.minor);
         return !(_skills.indexOf('Light Armor') > -1 && _skills.indexOf('Heavy Armor') > -1);
+    },
+    'no-one-two-handed': function (r: Roulette) {
+        const _skills = r.major.concat(r.minor);
+        return !(_skills.indexOf('One-Handed') > -1 && _skills.indexOf('Two-Handed') > -1);
     }
-    // 'no-elves': function (r: Roulette) {
-    //      if (r.race.includes('mer')) { // It's an elf!
-    //          return false;
-    //      }
-    //      return true;
-    // }
 };
