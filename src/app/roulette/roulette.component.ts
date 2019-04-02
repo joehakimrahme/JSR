@@ -16,13 +16,19 @@ export class RouletteComponent implements OnInit {
     _skills: Array<string>;
 
     constructor() {
-        this.result = {
-            race: '',
-            major: [],
-            minor: [],
-            handicaps: [],
-            quest: '',
-        };
+        const lastRoulette = localStorage.getItem('last-used');
+        if (lastRoulette) {
+            this.result = JSON.parse(lastRoulette);
+        } else {
+
+            this.result = {
+                race: '',
+                major: [],
+                minor: [],
+                handicaps: [],
+                quest: '',
+            };
+        }
     }
 
     ngOnInit() {
@@ -67,6 +73,8 @@ export class RouletteComponent implements OnInit {
                 quest: choice(QUESTS),
             };
         } while (!this.isValid());
+
+        localStorage.setItem('last-used', JSON.stringify(this.result));
     }
 
 }
