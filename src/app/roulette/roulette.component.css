@@ -1,13 +1,13 @@
 .roulette {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-top: 8em;
 }
 
 .roulette table {
+    width: 50%;
+    margin: 0 auto;
     margin-bottom: 2em;
 }
+
 
 .roulette table td {
     border-bottom:1pt solid #505050;

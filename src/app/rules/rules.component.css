@@ -1,19 +1,29 @@
-li {
-    padding-top: 5%;
+.rules {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 5%;
+}
+
+.rules h3 {
+    margin-top: 5%;
+}
+
+.rules ul {
+    margin-left: 5%;
 }
 
 table td {
     border-bottom:1pt solid #505050;
     border-top:1pt solid #505050;
+    padding: 1.3em;;
 }
 
+
 .handicaps table {
+    margin-top: 5%;
     font-size: 18px;
 }
 
-table td {
-    padding: 2%;
-}
 
 @media only screen and (max-width: 600px) {
     .handicaps table {

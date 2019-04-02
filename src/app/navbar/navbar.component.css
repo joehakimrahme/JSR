@@ -8,12 +8,12 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 8em;
 }
 
 .logo {
     text-decoration: none;
     color: white;
+
 }
 
 .nav-links {
@@ -47,4 +47,9 @@ nav {
     .nav-links {
 	display: block;
     }
+    .logo {
+	padding: 1%;
+    }
+
+
 }
