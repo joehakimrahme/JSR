@@ -1,9 +1,9 @@
 .roulette {
-    margin-top: 8em;
+    margin-top: 5em;
 }
 
 .roulette table {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     margin-bottom: 2em;
 }
@@ -11,25 +11,36 @@
 
 .roulette table td {
     border-bottom:1pt solid #505050;
+    padding: 1em 0 1em 1em;
 }
 
 .button {
     text-decoration: none;
-    color: black;
-    margin-left: 40%;
+    margin-left: 30%;
+    margin-top: 5%;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    /* size comes from text & padding (no width/height) */
+    padding: 0.5em 19%;
+    /* make sure colors have enough contrast! */
+    color: #c1bdb3;
+    background-color: #7f7979;
 }
+
+.button:focus {outline:0;}
 
 @media only screen and (max-width: 600px) {
     .roulette table {
-	font-size: 12px;
-	width: 100%;
+        font-size: 12px;
+        width: 80%;
     }
 
     .roulette table td {
-	padding: 0.5em;
-    }
-
-    .roulette {
-	padding: 1em;
+        padding: 0.5em;
     }
 }

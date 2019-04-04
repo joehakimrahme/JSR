@@ -1,19 +1,13 @@
 nav {
-    background-color: black;
+    background-color: #161925;
     padding-left: 3%;
     padding-right: 1%;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    text-decoration: none;
-    color: white;
-
 }
 
 .nav-links {
@@ -27,28 +21,31 @@ nav {
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
-    color: white;
+    color: #d8dbe2;
 }
 
 .nav-item:hover {
-    background-color: white;
+    background-color: #7f7979;
 }
 
 .nav-item:hover a {
-    color: black;
+    color: #c1bdb3;
 }
 
 .logo {
     font-size: 30px;
-    text-color: #801515
+    padding: 0.1em;
+    text-decoration: none;
+    color: #d8dbe2;
+    cursor: default;
 }
 
 @media only screen and (max-width: 600px) {
     .nav-links {
-	display: block;
+        display: block;
     }
     .logo {
-	padding: 1%;
+        padding: 1%;
     }
 
 
