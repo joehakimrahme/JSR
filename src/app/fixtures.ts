@@ -95,7 +95,7 @@ export const CONDITIONS: object = {
     },
     'darkbro-sleep': function (r: Roulette) {
         // sleeping is required for DB questline
-        return !(r.handicaps.indexOf('Insomniac') > -1 && r.quest === 'Dark Brotherhood');
+        return !(r.handicaps.indexOf('Insomniac') > -1 && r.quest.indexOf('Dark Brotherhood') > -1);
     },
     'unarmed-khajit': function (r: Roulette) {
         // not sure about this one, but I think only khajit should get BF for now
