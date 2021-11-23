@@ -1,7 +1,7 @@
 <nav class="navbar">
-  <a href="#" class="logo">Joe's Skyrim Roulette</a>
+  <a class="logo">Joe's Skyrim Roulette</a>
   <ul class="nav-links">
-    <li class="nav-item" id="navbar-roulette"><a href="#" (click)="$event.preventDefault(); ngOnSelect('roulette')">Roulette</a></li>
-    <li class="nav-item"id="navbar-rules"><a href="#" (click)="$event.preventDefault(); ngOnSelect('rules')">Rules</a></li>
+    <li class="nav-item" id="navbar-roulette"><a routerLink="/roulette">Roulette</a></li>
+    <li class="nav-item" id="navbar-rules"><a routerLink="/rules">Rules</a></li>
   </ul>
 </nav>
